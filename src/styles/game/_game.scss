@@ -1,0 +1,135 @@
+.game{
+  height: inherit;
+  position: relative;
+  transition: all 0.5s ease;
+  display: none;
+  opacity: 0;
+
+  &.show{
+    display: block;
+    opacity: 1;
+  }
+
+form{
+  padding-top: 20%;
+}
+
+.input{
+  width: 80%;
+  height:50px;
+  border: none;
+  font-size: 1.4em;
+  text-align: center;
+  outline: none;
+  border-radius: 50px;
+  font-family: $font-sans-serif;
+  // font-weight: bold;
+}
+
+.enter-name{
+  height: 50px;
+  border: 0;
+  width: 80%;
+  background: $color-light-blue;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-radius: 50px;
+  color: white;
+  font-size: 1em;
+  margin: 20px 0 0 0;
+  outline: 0;
+  transition: all 0.4s $bezier;
+  cursor: pointer;
+}
+
+.name-count{
+  height: 20px;
+  padding-top: 15px;
+  font-weight: bold;
+  font-size: 0.5;
+  letter-spacing: 0.1em;
+
+}
+
+.submit-play{
+  height: 50px;
+  border: 0;
+  width: 80%;
+  border: solid 4px white;
+  background: blue;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-radius: 50px;
+  color: white;
+  font-size: 1em;
+  margin: 20px 0 0 0;
+  outline: 0;
+  transition: all 0.4s $bezier;
+  cursor: pointer;
+
+}
+
+.results{
+  list-style: none;
+  text-align: left;
+  // overflow: scroll;
+  margin-left: 45px;
+  // padding-left: 10px;
+  // background: transparent;
+  border-radius: 50px;
+
+  height: auto;
+  width: 5px;
+  box-shadow: -25px 0px 0 0 $color-white;
+
+  // .results:after{
+  //   list-style: none;
+  //   text-align: left;
+  //   // overflow: scroll;
+  //   margin-left: 45px;
+  //   // padding-left: 10px;
+  //   // background: transparent;
+  //   border-radius: 50px;
+  //
+  //   height: auto;
+  //   width: 5px;
+  //   box-shadow: -25px 0px 0 0 $color-white;
+  //
+  // }
+
+    li{
+      font-size: 2em;
+
+
+    }
+
+}
+
+.restart{
+  display: none;
+}
+
+
+.rules{
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+
+
+  p{
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 1em;
+    cursor: pointer;
+
+    &:hover{
+      opacity: 0.75;
+    }
+  }
+
+}
+
+}

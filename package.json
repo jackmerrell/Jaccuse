@@ -1,0 +1,92 @@
+{
+  "name": "jaccuse",
+  "version": "0.0.1",
+  "author": "Jack Merrell",
+  "description": "jaccuse",
+  "scripts": {
+    "build": "gulp build",
+    "dev": "gulp",
+    "lint": "gulp lint-js && gulp lint-css",
+    "start": "gulp",
+    "watch": "gulp"
+  },
+  "chisel": {
+    "src": {
+      "assets": "assets/**/*",
+      "app": "scripts/app.js",
+      "base": "src",
+      "dataPath": "data/",
+      "scripts": "scripts/**/*",
+      "styles": "styles/**/*",
+      "stylesMain": "styles/*.scss",
+      "templatesBuild": [
+        "templates/*.{twig,html}"
+      ],
+      "templatesWatch": [
+        "templates/**/*.{twig,html}",
+        "data/**.json"
+      ],
+      "templatesPath": "templates/",
+      "vendorBase": "scripts/vendor",
+      "vendorConfig": "scripts/vendor.json"
+    },
+    "dest": {
+      "assets": "assets",
+      "base": "dist",
+      "revManifest": "rev-manifest.json",
+      "scripts": "scripts",
+      "styles": "styles"
+    }
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.18.12",
+    "browserify": "^14.4.0",
+    "browserify-shim": "^3.8.14",
+    "del": "^3.0.0",
+    "glob": "^7.1.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-cli": "^1.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-data": "^1.2.1",
+    "gulp-eslint": "^4.0.0",
+    "gulp-filter": "^5.0.0",
+    "gulp-htmlhint": "^0.3.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-mirror": "^1.0.0",
+    "gulp-newer": "^1.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-prettify": "^0.5.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^7.1.2",
+    "gulp-rev-replace": "^0.4.3",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-glob": "^1.0.8",
+    "gulp-sequence": "^0.4.6",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-stylelint": "^3.9.0",
+    "gulp-twig": "^v1.1.1",
+    "gulp-uglify": "^2.0.0",
+    "multipipe": "^1.0.2",
+    "pre-commit": "^1.2.2",
+    "through2": "^2.0.3",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^3.2.1",
+    "normalize-scss": "^7.0.0"
+  },
+  "browserify-shim": {
+    "jquery": "global:jQuery"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}

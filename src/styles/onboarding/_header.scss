@@ -1,0 +1,29 @@
+$bezier: cubic-bezier(.25,.8,.25,1);
+
+
+
+.walkthrough-header {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 25px;
+
+
+
+  .dot {
+    background: rgba(black, 0.25);
+    border-radius: 100px;
+    height: 10px;
+    float:left;
+    margin: 0 5px;
+    transform: scale(0.7);
+    transition: transform 0.2s $bezier, background 0.4s $bezier;
+    width: 10px;
+
+    &.active {
+      background: white;
+      transform: scale(1);
+      transition-delay: 0.2s;
+    }
+  }
+}

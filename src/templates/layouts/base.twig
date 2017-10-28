@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ pageName }} - Jaccuse</title>
+  <link rel="stylesheet" property="stylesheet" href="{{ revisionedPath('styles/main.css') }}" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Sedgwick+Ave+Display" rel="stylesheet">
+  <script>document.querySelector('html').classList.remove('no-js');</script>
+  {% if hasVendor() %}
+    <script src="{{ revisionedPath('scripts/vendor.js') }}" defer></script>
+  {% endif %}
+  <script src="{{ revisionedPath('scripts/bundle.js') }}" defer></script>
+
+  {% block head %}
+  {% endblock %}
+</head>
+
+<body class="{{body_class}}">
+  {% block header %}
+    {% include 'components/header.twig' %}
+  {% endblock %}
+
+  <main>
+    {% block content %}
+
+    {% endblock %}
+  </main>
+
+  {% block footer %}
+    {% include 'components/footer.twig' %}
+  {% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+.logo{
+  padding-top:10%;
+  font-family: 'Sedgwick Ave Display', cursive;
+
+  h1{
+    font-size: 4.5em;
+  }
+}
+
+.landing{
+  padding-top: 30%;
+  transition: all 1s ease;
+
+  &.show{
+    display: block;
+    opacity: 1;
+  }
+
+  &.hide{
+    display: none;
+    opacity: 0;
+  }
+}

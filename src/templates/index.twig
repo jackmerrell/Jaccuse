@@ -1,0 +1,33 @@
+{% extends "layouts/base.twig" %}
+{% set pageName = 'index' %}
+
+{% block content %}
+
+<div class="c-container">
+
+
+    <div id="landing" class="landing show">
+
+        <div class="logo">
+            <h1>Jaccuse!</h1>
+        </div>
+
+        <button id="playBTN">play</button>
+        <button id="rulesBTN">rules</button>
+    </div>
+
+
+    <div id="on-boarding" class="on-boarding">
+        {% include 'onboarding.twig' %}
+    </div>
+
+    <div id="game" class="game">
+        <div class="logo">
+            <h1>Jaccuse!</h1>
+        </div>
+        {% include 'play.twig' %}
+    </div>
+
+</div>
+
+{% endblock %}

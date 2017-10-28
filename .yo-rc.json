@@ -1,0 +1,22 @@
+{
+  "generator-chisel": {
+    "config": {
+      "name": "Jaccuse",
+      "author": "Jack Merrell",
+      "projectType": "fe",
+      "nameSlug": "jaccuse",
+      "nameCamel": "Jaccuse",
+      "hasFullStyling": false,
+      "hasStyleGuide": false,
+      "features": {
+        "has_babel": true,
+        "has_jquery": true
+      },
+      "chiselVersion": "0.9.0",
+      "has_jquery_vendor_config": true
+    },
+    "pages": [
+      "index"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+button{
+
+        height: 50px;
+        border: 0;
+        width: 80%;
+        background: $color-light-blue;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        border-radius: 15px;
+        color: white;
+        font-size: 1.2em;
+        margin: 25px 0 0 0;
+        outline: 0;
+        transition: all 0.4s $bezier;
+        cursor: pointer;
+
+        &:hover {
+          background: lighten(#5da3f2, 3%);
+        }
+        &:active {
+          background: #5da3f2;
+        }
+
+}
