@@ -1,5 +1,5 @@
 {% extends "layouts/base.twig" %}
-{% set pageName = 'index' %}
+{% set pageName = 'Jaccuse' %}
 
 {% block content %}
 
@@ -7,11 +7,9 @@
 
 
     <div id="landing" class="landing show">
-
         <div class="logo">
             <h1>Jaccuse!</h1>
         </div>
-
         <button id="playBTN">play</button>
         <button id="rulesBTN">rules</button>
     </div>
@@ -21,10 +19,8 @@
         {% include 'onboarding.twig' %}
     </div>
 
+
     <div id="game" class="game">
-        <div class="logo">
-            <h1>Jaccuse!</h1>
-        </div>
         {% include 'play.twig' %}
     </div>
 

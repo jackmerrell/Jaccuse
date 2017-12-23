@@ -7,7 +7,7 @@ button{
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 0.15em;
-        border-radius: 15px;
+        border-radius: 100px;
         color: white;
         font-size: 1.2em;
         margin: 25px 0 0 0;
@@ -16,10 +16,10 @@ button{
         cursor: pointer;
 
         &:hover {
-          background: lighten(#5da3f2, 3%);
+          background: $color-dark-blue;
         }
         &:active {
-          background: #5da3f2;
+          background: $color-light-blue;
         }
 
 }

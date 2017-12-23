@@ -18,6 +18,9 @@ html {
   font-family: $font-sans-serif !important;
   font-size: 0.8125rem; /* [1] */ /* 13px */
   line-height: 1.5; /* [1] */
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
   min-height: 100%; /* [3] */
   overflow-y: scroll; /* [2] */
 

@@ -1,6 +1,9 @@
 body {
   position: relative;
-  background-color: pink;
+  // background-color: ;
+  background: linear-gradient(-5deg, $color-pink 20%, pink 20%);
+
+
 
   @include bp-medium {
     display: flex;

@@ -32,8 +32,15 @@ $color-very-light-grey: #ccc;
 $color-light-grey: #999;
 $color-medium-grey: #666;
 $color-dark-grey: #333;
+
+// primary
 $color-blue: blue;
-$color-light-blue: lighten($color-blue,25%);
+$color-light-blue: #7a7cff;
+$color-dark-blue: #0026ca;
+
+//secondary
+$color-pink: #f8bbd0;
+
 
 // Text
 $color-bg: $color-white;

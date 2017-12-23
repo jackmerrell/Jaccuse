@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jaccuse</title>
+    <link rel="stylesheet" property="stylesheet" href="styles/main.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Sedgwick+Ave+Display" rel="stylesheet">
+    <script>
+      document.querySelector('html').classList.remove('no-js');
+    </script>
+    <script src="scripts/vendor.js" defer></script>
+    <script src="scripts/bundle.js" defer></script>
+
+  </head>
+
+  <body class="">
+    <header>
+    </header>
+
+    <main>
+
+      <div class="c-container">
+
+        <div id="landing" class="landing show">
+          <div class="logo">
+            <h1>Jaccuse!</h1>
+          </div>
+          <button id="playBTN">play</button>
+          <button id="rulesBTN">rules</button>
+        </div>
+
+        <div id="on-boarding" class="on-boarding">
+
+          <div id="pagination" class="walkthrough-header">
+            <a class="dot active"></a>
+            <a class="dot"></a>
+            <a class="dot"></a>
+            <a class="dot"></a>
+            <a class="dot"></a>
+
+          </div>
+
+          <div class="walkthrough-body">
+
+            <h2>Rules</h2>
+            <ul class="screens">
+              <li class="screen active">
+                <div class="media"></div>
+                <h4>A game of accusations and red herrings.</h4>
+                <h4>Avoid being correctly accused to stay in the game.</h4>
+              </li>
+
+              <li class="screen">
+                <div class="media"></div>
+                <h4>Each player submits the name of a famous or known person.</h4>
+                <h4>The last to enter clicks play and reads out all of the names twice. then no peeking!</h4>
+              </li>
+
+              <li class="screen">
+                <div class="media"></div>
+                <h4>Guess who’s who! The player to their left makes the first accusation. </h4>
+              </li>
+
+              <li class="screen">
+                <div class="media"></div>
+                <h4>Get it right and that player is out, giving you another go.</h4>
+                <h4>Get it wrong and the accused becomes the accuser.</h4>
+              </li>
+
+              <li class="screen">
+                <div class="media"></div>
+                <h4>The winner is the last player unaccused. </h4>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="walkthrough-footer">
+            <button id="next" class="button next-screen"></button>
+          </div>
+
+        </div>
+
+        <div id="game" class="game">
+
+          <form id="nameInput" autocomplete="off">
+            <input class="input" type="text" name="player-name" placeholder="enter name" id="name" value="" autocomplete="off" spellcheck="false" autocorrect="off" autofocus="autofocus">
+            <br>
+            <input class="enter-name" type="submit" value="Submit" id="submit">
+            <br>
+            <h5 id="NumberOfNames" class="name-count"></h5>
+            <input class="submit-play" type="submit" value="PLAY!" id="playJaccuse">
+
+            <div class="rules">
+              <p>rules</p>
+            </div>
+
+          </form>
+
+          <ul id="result" class="results">
+          </ul>
+
+          <form id="restart" class="restart">
+            <input type="submit" value="restart">
+          </form>
+
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer>
+    </footer>
+
+  </body>
+</html>
