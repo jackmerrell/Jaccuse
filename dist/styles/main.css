@@ -11,7 +11,7 @@
    ========================================================================== */
 body {
   position: relative;
-  background: linear-gradient(-5deg, #f8bbd0 20%, pink 20%);
+  background-color: #f8bbd0;
 }
 
 @media (min-width: 768px) {
