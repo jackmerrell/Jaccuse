@@ -788,19 +788,23 @@ button {
   background: #7a7cff;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
-  border-radius: 100px;
+  letter-spacing: 0.1em;
+  border-radius: 500px;
   color: white;
   font-size: 1.2em;
   margin: 25px 0 0 0;
   outline: 0;
   -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
 button:hover {
   background: #0026ca;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
 }
 
 button:active {
@@ -811,7 +815,7 @@ button:active {
   width: 100vw;
   height: 100vh;
   color: white;
-  background-color: blue;
+  background-color: #0000ff;
   text-align: center;
   position: fixed;
 }
@@ -996,15 +1000,15 @@ button:active {
 .walkthrough-footer button {
   height: 50px;
   border: 0;
-  width: 55%;
+  width: 80%;
   background: #7a7cff;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
-  border-radius: 15px;
+  letter-spacing: 0.1em;
+  border-radius: 500px;
   color: white;
-  font-size: 12px;
-  margin: 0;
+  font-size: 1.2em;
+  margin: 25px 0 0 0;
   outline: 0;
   -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -1021,13 +1025,11 @@ button:active {
 }
 
 .walkthrough-footer button:hover {
-  background: #7a7cff;
-  border-radius: 15px;
+  background: #0026ca;
 }
 
 .walkthrough-footer button:active {
-  background: blue;
-  border-radius: 15px;
+  background: #7a7cff;
 }
 
 .game {
@@ -1105,18 +1107,26 @@ button:active {
 }
 
 .game .results {
-  list-style: none;
-  text-align: left;
+  overflow: auto;
+  height: inherit;
+  width: inherit;
+  margin-top: 20px;
+}
+
+.game .results ul {
   margin-left: 45px;
   border-radius: 50px;
-  height: auto;
   width: 5px;
   -webkit-box-shadow: -25px 0px 0 0 #fff;
           box-shadow: -25px 0px 0 0 #fff;
 }
 
 .game .results li {
+  text-align: left;
+  list-style: none;
   font-size: 2em;
+  padding-bottom: 15px;
+  width: auto;
 }
 
 .game .restart {

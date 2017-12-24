@@ -72,36 +72,26 @@ form{
 }
 
 .results{
-  list-style: none;
-  text-align: left;
-  // overflow: scroll;
-  margin-left: 45px;
-  // padding-left: 10px;
-  // background: transparent;
-  border-radius: 50px;
+  overflow: auto;
+  height: inherit;
+  width: inherit;
+  margin-top: 20px;
 
-  height: auto;
-  width: 5px;
-  box-shadow: -25px 0px 0 0 $color-white;
 
-  // .results:after{
-  //   list-style: none;
-  //   text-align: left;
-  //   // overflow: scroll;
-  //   margin-left: 45px;
-  //   // padding-left: 10px;
-  //   // background: transparent;
-  //   border-radius: 50px;
-  //
-  //   height: auto;
-  //   width: 5px;
-  //   box-shadow: -25px 0px 0 0 $color-white;
-  //
-  // }
+    ul{
+      margin-left: 45px;
+      border-radius: 50px;
+      width: 5px;
+      box-shadow: -25px 0px 0 0 $color-white;
+
+    }
 
     li{
+      text-align: left;
+      list-style: none;
       font-size: 2em;
-
+      padding-bottom: 15px;
+      width: auto;
 
     }
 

@@ -1,5 +1,8 @@
 {% block play %}
-
+<div class="logo">
+    <!-- <h1>Jaccuse!</h1> -->
+    <img src="assets/images/jaccuse.gif" width="250px">
+</div>
 <form id="nameInput" autocomplete="off">
   <input class="input" type="text" name="player-name" placeholder="enter name" id="name" value="" autocomplete="off" spellcheck="false" autocorrect="off" autofocus="autofocus"><br>
   <input class="enter-name" type="submit" value="Submit" id="submit"><br>
@@ -12,8 +15,13 @@
 
 </form>
 
-<ul id="result" class="results">
-</ul>
+<div class="results">
+
+  <ul  id="result">
+
+  </ul>
+
+</div>
 
 <form id="restart" class="restart">
   <input type="submit" value="restart">

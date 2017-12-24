@@ -86,11 +86,8 @@ $(document).ready(function() {
     nextScreen();
   });
 
-  // console.log('screen count = ' + index);
-  // console.log(indexMax);
 
-
-  // GAME
+  ///////////////////// GAME /////////////////////
 
   var nameList = [];
 
@@ -124,18 +121,12 @@ $(document).ready(function() {
       $results.append('<li>' + dataR[i] + '</li>');
     }
 
-    $results.fadeIn('100');
+    $results.fadeIn('200');
 
 
   });
 
-
-
-
 });
-
-
-
 
 // SHUFFLE FUNCTION
 
