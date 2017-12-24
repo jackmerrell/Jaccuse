@@ -159,6 +159,7 @@ $(document).ready(function() {
     if ($results.hasClass('hide')) {
       $results.removeClass('hide');
       $results.addClass('show');
+      $resultsContainer.animate({scrollTop: $resultsContainer.offset().top});
       $hideNames.html("hide names");
     }else{
       $results.removeClass('show');
