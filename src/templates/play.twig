@@ -1,32 +1,26 @@
 {% block play %}
 <div class="logo">
-    <!-- <h1>Jaccuse!</h1> -->
-    <img src="assets/images/jaccuse.gif" width="250px">
+    <img width="250px">
 </div>
+
 <form id="nameInput" autocomplete="off">
+  <!-- <label>enter name</label><br> -->
   <input class="input" type="text" name="player-name" placeholder="enter name" id="name" value="" autocomplete="off" spellcheck="false" autocorrect="off" autofocus="autofocus"><br>
   <input class="enter-name" type="submit" value="Submit" id="submit"><br>
   <h5 id="NumberOfNames" class="name-count"></h5>
   <input class="submit-play" type="submit" value="PLAY!" id="playJaccuse">
 
-  <div class="rules">
-    <p>rules</p>
-  </div>
-
 </form>
 
-<div class="results">
+<div class="result-container hide" id="resultContainer">
 
-  <ul  id="result">
-
+  <h5 class="hint">Read out all the names twice.</h5>
+  <ul class="result" id="result">
   </ul>
 
+  <button class="hide-names" id="hideNames">hide names</button>
+  <input class="submit-play" type="submit" value="Play again" id="restart">
 </div>
-
-<form id="restart" class="restart">
-  <input type="submit" value="restart">
-</form>
-
 
 
 {% endblock %}

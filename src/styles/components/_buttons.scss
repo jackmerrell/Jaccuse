@@ -1,5 +1,4 @@
 button{
-
         height: 50px;
         border: 0;
         width: 80%;
@@ -13,16 +12,17 @@ button{
         margin: 25px 0 0 0;
         outline: 0;
         transition: all 0.4s $bezier;
-        box-shadow: 0px 0px 1px rgba(0,0,0,0.2);
         cursor: pointer;
+        box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
 
         &:hover {
           background: $color-dark-blue;
           box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
-
         }
+
         &:active {
           background: $color-light-blue;
+          transform: scale(1.02);
         }
 
 }

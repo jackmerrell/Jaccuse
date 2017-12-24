@@ -796,9 +796,9 @@ button {
   outline: 0;
   -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-  -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
 }
 
 button:hover {
@@ -809,6 +809,8 @@ button:hover {
 
 button:active {
   background: #7a7cff;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .c-container {
@@ -982,8 +984,8 @@ button:active {
 }
 
 .walkthrough-body .screen .media {
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   margin: 0 auto;
 }
 
@@ -994,7 +996,7 @@ button:active {
 .walkthrough-footer {
   position: absolute;
   width: 100%;
-  bottom: 15%;
+  bottom: 25%;
 }
 
 .walkthrough-footer button {
@@ -1050,6 +1052,11 @@ button:active {
   padding-top: 20%;
 }
 
+.game form.hide {
+  display: none;
+  opacity: 0;
+}
+
 .game .input {
   width: 80%;
   height: 50px;
@@ -1059,6 +1066,7 @@ button:active {
   outline: none;
   border-radius: 50px;
   font-family: "Lato", sans-serif, -apple-system, system-ui, BlinkMacSystemFont, "Roboto", "Helvetica Neue", "Arial", sans-serif;
+  font-weight: 700;
 }
 
 .game .enter-name {
@@ -1098,39 +1106,62 @@ button:active {
   letter-spacing: 0.15em;
   border-radius: 50px;
   color: white;
-  font-size: 1em;
-  margin: 20px 0 0 0;
+  font-size: 1.2em;
+  margin: 60px 0 40px 0;
   outline: 0;
   -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   cursor: pointer;
 }
 
-.game .results {
+.game .hint {
+  padding: 20px 0;
+}
+
+.game .result-container {
   overflow: auto;
   height: inherit;
   width: inherit;
-  margin-top: 20px;
+  margin: 20px 0;
+  padding-bottom: 100px;
+  -webkit-overflow-scrolling: touch;
 }
 
-.game .results ul {
-  margin-left: 45px;
-  border-radius: 50px;
-  width: 5px;
-  -webkit-box-shadow: -25px 0px 0 0 #fff;
-          box-shadow: -25px 0px 0 0 #fff;
+.game .result-container.hide {
+  display: none;
+  opacity: 0;
 }
 
-.game .results li {
+.game .result-container.show {
+  display: block;
+  opacity: 1;
+}
+
+.game .result-container .result {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.game .result-container .result.hide {
+  opacity: 0;
+}
+
+.game .result-container .result.show {
+  opacity: 1;
+}
+
+.game .result-container ul {
+  margin-left: 40px;
+  margin-right: 10px;
+  border-left: solid white 5px;
+}
+
+.game .result-container li {
   text-align: left;
   list-style: none;
   font-size: 2em;
-  padding-bottom: 15px;
-  width: auto;
-}
-
-.game .restart {
-  display: none;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 .game .rules {
